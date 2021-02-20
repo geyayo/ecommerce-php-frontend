@@ -51,21 +51,32 @@
             </div>
             <!-- BLOQUE DE CATEGORÍAS Y BUSCADOR -->
             <div class="col-lg-6 col-md-6 col-sm-8 col-12">
+                <!-- PRUEBA BOTON CATEGORIAS Y BUSCADOR JUNTOS -->
+                <div class="input-group mb-3" id="menuBuscador">
+                    <span class="input-group-text backColor" id="buscador">Menu
+                        <span class="float-end">
+                            <i class="bi bi-three-dots-vertical"></i>
+                        </span>
+                    </span>
+                    <!-- <button class="btn btn-outline-secondary dropdown-toggle" id="btnCategorias" type="button" data-bs-toggle="dropdown" aria-expanded="false">Menu</button> -->
+                    <input type="text" class="form-control" aria-label="Text input with dropdown button" placeholder="Buscar...">
+                    <button class="btn  backColor" id="buscador" type="button" id="button-addon2"><i class="bi bi-search"></i></button>
+                </div>
                 <!-- BOTON DE CATEGORIAS -->
-                <div class="col-lg-4 col-md-4 col-sm-4 col-12 backColor" id="btnCategorias">
+                <!-- <div class="col-lg-4 col-md-4 col-sm-4 col-12 backColor" id="btnCategorias">
                     <p>CATEGORÍAS
                         <span class="float-end">
                             <i class="bi bi-three-dots-vertical"></i>
                         </span>
                     </p>
-                </div>
+                </div> -->
                 <!-- BUSCADOR -->
-                <div class="input-group col-lg-8 col-md-8 col-sm-8 col-12" id="buscador">
+                <!-- <div class="input-group col-lg-8 col-md-8 col-sm-8 col-12" id="buscador">
                     <input type="search" name="buscar" class="form-control" placeholder="Buscar..." aria-label="Recipient's username" aria-describedby="button-addon2">
                     <button class="btn btn-outline-secondary" type="button" id="button-addon2">
                         <i class="bi bi-search"></i>
                     </button>
-                </div>
+                </div>  -->
 
                 <!-- <div class="input-group col-lg-8 col-md-8 col-sm-8 col-12" id="buscador">
                     <input type="search" name="buscar" class="form-control" placeholder="Buscar...">
@@ -77,7 +88,7 @@
             <!-- CARRITO DE COMPRAS -->
             <div class="col-lg-3 col-md-3 col-sm-2 col-12" id="carrito">
                 <a href="#">
-                    <button class="btn btn-secondary float-start backColor">
+                    <button class="btn float-start backColor">
                         <i class="bi bi-cart4"></i>
                     </button>
                 </a>

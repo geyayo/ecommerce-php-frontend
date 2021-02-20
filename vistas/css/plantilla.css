@@ -1,0 +1,90 @@
+/* =========== GLOBAL ========== */
+
+*{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Ubuntu', sans-serif;
+}
+ul, ol{
+    padding: 0px;
+}
+
+a:visited, a:link, a:focus, a:hover, a:active{
+    list-style: none;
+    text-decoration: none;
+}
+
+.barraSuperior{
+    background: #212529;
+}
+.barraSuperior a{
+    color: white;
+}
+.backColor, .backColor a, .backColor i{
+    background: #0DCAF0;
+    color: white;
+}
+/* .backColor, .backColor a, .backColor i{
+    background: #DC3545;
+    color: white;
+} */
+/* =========== REDES SOCIALES ========== */
+
+.redSocial{
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    padding: 3px;
+    border-radius: 5px;
+}
+
+/* FACEBOOK */
+.facebookBlanco{
+    color: white;
+}
+.facebookNegro{
+    color: black;
+}
+.facebookColor{
+    color: white;
+    background: #46639f;
+}
+
+/* INSTAGRAM */
+.instagramBlanco{
+    color: white;
+}
+.instagramNegro{
+    color: black;
+}
+.instagramColor{
+    color: white;
+    background: linear-gradient(45deg, #fca925, #ee1d5f, #6350a2);
+}
+
+/* TWITTER */
+.twittermBlanco{
+    color: white;
+}
+.twitterNegro{
+    color: black;
+}
+.twitterColor{
+    color: white;
+    background: #0ab2e6;
+}
+
+/* YOUTUBE */
+.youtubeBlanco{
+    color: white;
+}
+.youtubeNegro{
+    color: black;
+}
+.youtubeColor{
+    color: white;
+    background: #d6513e;
+}
