@@ -38,3 +38,106 @@
         </div>
     </div>
 </div>
+
+<!-- =========== HEADER ========== -->
+<header class="container-fluid"> 
+    <div class="container">
+        <div class="row" id="cabezote">
+            <!-- LOGOTIPO -->
+            <div class="col-lg-3 col-md-3 col-sm-2 col-12" id="logotipo">
+                <a href="#">
+                    <img src="http://localhost/cursophp/backend/vistas/img/plantilla/logo.png" class="img-fluid" alt="">
+                </a>
+            </div>
+            <!-- BLOQUE DE CATEGORÍAS Y BUSCADOR -->
+            <div class="col-lg-6 col-md-6 col-sm-8 col-12">
+                <!-- BOTON DE CATEGORIAS -->
+                <div class="col-lg-4 col-md-4 col-sm-4 col-12 backColor" id="btnCategorias">
+                    <p>CATEGORÍAS
+                        <span class="float-end">
+                            <i class="bi bi-three-dots-vertical"></i>
+                        </span>
+                    </p>
+                </div>
+                <!-- BUSCADOR -->
+                <div class="input-group col-lg-8 col-md-8 col-sm-8 col-12" id="buscador">
+                    <input type="search" name="buscar" class="form-control" placeholder="Buscar..." aria-label="Recipient's username" aria-describedby="button-addon2">
+                    <button class="btn btn-outline-secondary" type="button" id="button-addon2">
+                        <i class="bi bi-search"></i>
+                    </button>
+                </div>
+
+                <!-- <div class="input-group col-lg-8 col-md-8 col-sm-8 col-12" id="buscador">
+                    <input type="search" name="buscar" class="form-control" placeholder="Buscar...">
+                    <span class="input-group-btn">
+                        <i class="bi bi-search"></i>
+                    </span>
+                </div> -->
+            </div>
+            <!-- CARRITO DE COMPRAS -->
+            <div class="col-lg-3 col-md-3 col-sm-2 col-12" id="carrito">
+                <a href="#">
+                    <button class="btn btn-secondary float-start backColor">
+                        <i class="bi bi-cart4"></i>
+                    </button>
+                </a>
+                <p>TU CARRITO <span class="cantidadCesta"></span> <br> USD $ <span class="sumaCesta"></span></p>
+            </div> 
+        </div>
+        <!-- CATEGORIAS -->
+        <div class="row row-cols-auto backColor" id="categorias">
+            <div class="col-lg-2 col-md-3 col-sm-4 col-12">
+                <h4>
+                    <a href="#" class="pixelCategorias">Lorem Ipsum</a>
+                </h4>
+                <hr>
+                <ul>
+                    <li><a href="#" class="pixelSubCategoria">Lorem Ipsum</a></li>
+                    <li><a href="#" class="pixelSubCategoria">Lorem Ipsum</a></li>
+                    <li><a href="#" class="pixelSubCategoria">Lorem Ipsum</a></li>
+                    <li><a href="#" class="pixelSubCategoria">Lorem Ipsum</a></li>
+                    <li><a href="#" class="pixelSubCategoria">Lorem Ipsum</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-4 col-12">
+                <h4>
+                    <a href="#" class="pixelCategorias">Lorem Ipsum</a>
+                </h4>
+                <hr>
+                <ul>
+                    <li><a href="#" class="pixelSubCategoria">Lorem Ipsum</a></li>
+                    <li><a href="#" class="pixelSubCategoria">Lorem Ipsum</a></li>
+                    <li><a href="#" class="pixelSubCategoria">Lorem Ipsum</a></li>
+                    <li><a href="#" class="pixelSubCategoria">Lorem Ipsum</a></li>
+                    <li><a href="#" class="pixelSubCategoria">Lorem Ipsum</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-4 col-12">
+                <h4>
+                    <a href="#" class="pixelCategorias">Lorem Ipsum</a>
+                </h4>
+                <hr>
+                <ul>
+                    <li><a href="#" class="pixelSubCategoria">Lorem Ipsum</a></li>
+                    <li><a href="#" class="pixelSubCategoria">Lorem Ipsum</a></li>
+                    <li><a href="#" class="pixelSubCategoria">Lorem Ipsum</a></li>
+                    <li><a href="#" class="pixelSubCategoria">Lorem Ipsum</a></li>
+                    <li><a href="#" class="pixelSubCategoria">Lorem Ipsum</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-4 col-12">
+                <h4>
+                    <a href="#" class="pixelCategorias">Lorem Ipsum</a>
+                </h4>
+                <hr>
+                <ul>
+                    <li><a href="#" class="pixelSubCategoria">Lorem Ipsum</a></li>
+                    <li><a href="#" class="pixelSubCategoria">Lorem Ipsum</a></li>
+                    <li><a href="#" class="pixelSubCategoria">Lorem Ipsum</a></li>
+                    <li><a href="#" class="pixelSubCategoria">Lorem Ipsum</a></li>
+                    <li><a href="#" class="pixelSubCategoria">Lorem Ipsum</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
