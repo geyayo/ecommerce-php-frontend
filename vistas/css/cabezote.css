@@ -22,10 +22,7 @@
 }
 
 /* ========== HEADER ========== */
-header #logotipo img{
-    padding: 18px 60px;
-    padding-left: 0px;
-}
+
 /* header #btnCategorias{
     margin: 20px 0;
 }
@@ -74,4 +71,68 @@ header #categorias h4{
 }
 header #categorias hr{
     border: 1px solid rgba(255,255,255,.3);
+}
+
+/* ========== PUNTOS DE QUIEBRE ========== */
+
+
+/* Escritorio Grande (LG lo revisamos en 1366px en adelante) */
+@media (min-width: 1200px) {
+    /* HEADER */
+    header #logotipo img{
+        padding: 18px 60px;
+        padding-left: 0px;
+    }
+    header #carrito{
+        padding-left: 100px;
+    }
+}
+/* Escritorio Mediano (MD lo revisamose en 1024px) */
+@media (max-width: 1199.98px) and (min-width: 992px) {
+    /* HEADER */
+    header #logotipo img{
+        padding: 22px 60px;
+        padding-left: 0px;
+    }
+    header #carrito{
+        padding-left: 70px;
+    }
+}
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 991.98px) and (min-width: 768px) {
+    /* HEADER */
+    header #logotipo img{
+        padding: 23px 0px;
+    }
+    header #carrito{
+        padding-left: 65px;
+    }
+    header #carrito p{
+        display: none;
+    }
+}
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+    /* TOP */
+    #top ul{
+        text-align: center
+    }
+    #top #registro{
+        border-top: 1px solid #222;
+    }
+    #top .registro{
+        margin-top: -15px;
+    }
+    /* HEADER */
+    header #logotipo img{
+        padding: 30px;
+        padding-bottom: 5px;
+    }
+    header #categorias{
+        margin-top: 4px;
+        margin-bottom: 10px;
+    }
+    header #carrito{
+        margin: 0px;
+    }
 }

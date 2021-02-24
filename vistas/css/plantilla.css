@@ -88,3 +88,39 @@ a:visited, a:link, a:focus, a:hover, a:active{
     color: white;
     background: #d6513e;
 }
+
+/* ========== PUNTOS DE QUIEBRE ========== */
+
+
+/* Escritorio Grande (LG lo revisamos en 1366px en adelante) */
+@media (min-width: 1200px) {
+    .col-xlg-0{
+        display: none;
+    }
+    
+}
+/* Escritorio Mediano (MD lo revisamose en 1024px) */
+@media (max-width: 1199.98px) and (min-width: 992px) {
+    .col-lg-0{
+        display: none;
+    }
+ 
+}
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 991.98px) and (min-width: 768px) {
+    .col-md-0{
+        display: none;
+    }
+  
+}
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+    .col-sm-0{
+        display: none;
+    }
+   
+}
+
+
+
+

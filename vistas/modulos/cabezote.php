@@ -92,12 +92,12 @@
                         <i class="bi bi-cart4"></i>
                     </button>
                 </a>
-                <p>TU CARRITO <span class="cantidadCesta"></span> <br> USD $ <span class="sumaCesta"></span></p>
+                <p>TU CARRITO <span class="cantidadCesta">3</span> <br> USD $ <span class="sumaCesta">20</span></p>
             </div> 
         </div>
         <!-- CATEGORIAS -->
         <div class="row row-cols-auto backColor" id="categorias">
-            <div class="col-lg-2 col-md-3 col-sm-4 col-12">
+            <div class="col-lg-3 col-md-3 col-sm-4 col-12">
                 <h4>
                     <a href="#" class="pixelCategorias">Lorem Ipsum</a>
                 </h4>
@@ -110,7 +110,7 @@
                     <li><a href="#" class="pixelSubCategoria">Lorem Ipsum</a></li>
                 </ul>
             </div>
-            <div class="col-lg-2 col-md-3 col-sm-4 col-12">
+            <div class="col-lg-3 col-md-3 col-sm-4 col-12">
                 <h4>
                     <a href="#" class="pixelCategorias">Lorem Ipsum</a>
                 </h4>
@@ -123,7 +123,7 @@
                     <li><a href="#" class="pixelSubCategoria">Lorem Ipsum</a></li>
                 </ul>
             </div>
-            <div class="col-lg-2 col-md-3 col-sm-4 col-12">
+            <div class="col-lg-3 col-md-3 col-sm-4 col-12">
                 <h4>
                     <a href="#" class="pixelCategorias">Lorem Ipsum</a>
                 </h4>
@@ -136,7 +136,7 @@
                     <li><a href="#" class="pixelSubCategoria">Lorem Ipsum</a></li>
                 </ul>
             </div>
-            <div class="col-lg-2 col-md-3 col-sm-4 col-12">
+            <div class="col-lg-3 col-md-3 col-sm-4 col-12">
                 <h4>
                     <a href="#" class="pixelCategorias">Lorem Ipsum</a>
                 </h4>
