@@ -21,36 +21,15 @@
     font-size: 15px;
 }
 
-/* ========== HEADER ========== */
-
-/* header #btnCategorias{
-    margin: 20px 0;
-}
-header #btnCategorias p{
-    line-height: 40px;
-    margin-bottom: 0px;
-}
-header #btnCategorias p span{
-    cursor: pointer;
-}
-header #buscador{
-    margin: 0 -25px;
-} */
-
 header #menuBuscador{
     margin: 20px 0;
 }
-header #buscador span i{
+header #btnCategorias span i{
     cursor: pointer;
 }
 header #carrito{
     margin: 20px 0;
 }
-/* header #carrito button{
-    padding: 9px 15px;
-    border: 1px solid silver;
-    border-radius: 0;
-} */
 header #carrito p{
     padding: 0px;
     padding-left: 60px;
@@ -59,9 +38,9 @@ header #carrito p{
     font-size: 12px;
 }
 header #categorias{
-    display: inline-flexbox;
-    /* margin-top: -10px; */
-    /* position: relative; */
+    display: none;
+    margin-top: -10px;
+    position: relative;
     margin-top: -10px;
     padding-top: 10px;
 }

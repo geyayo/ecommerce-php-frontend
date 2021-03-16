@@ -7,3 +7,5 @@ require_once "controladores/plantilla.controlador.php";
 $plantilla = new ControladorPlantilla();
 //Ejecutamos un metodo 
 $plantilla -> plantilla();
+
+
