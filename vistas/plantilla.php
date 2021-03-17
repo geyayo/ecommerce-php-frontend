@@ -10,6 +10,12 @@
     
     <title>Ecommerce-Curso</title>
 
+    <?php
+      $icono = ControladorPlantilla::ctrEstiloPlantilla();
+
+      echo '<link rel="icon" href="http://localhost/cursophp/backend/'.$icono["icono"].'">';
+    ?>
+    
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
@@ -35,6 +41,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <script src="vistas/js/cabezote.js"></script>
+    <script src="vistas/js/plantilla.js"></script>
 
 
 
