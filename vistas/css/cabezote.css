@@ -39,14 +39,20 @@ header #carrito p{
 }
 header #categorias{
     display: none;
-    margin-top: -10px;
+    margin-top: -15px;
     position: relative;
     margin-top: -10px;
-    padding-top: 10px;
+    padding-top: 0px;
 }
 header #categorias h4{
-    margin-top: 20px;
+    margin-top: 5px;
     margin-bottom: -10px;
+}
+header #categorias h4 a{
+    font-size: 19px;
+}
+header #categorias ul{
+    margin-top: -13px;
 }
 header #categorias hr{
     border: 1px solid rgba(255,255,255,.3);
@@ -76,6 +82,12 @@ header #categorias hr{
     header #carrito{
         padding-left: 70px;
     }
+    header #categorias h4 a{
+        font-size: 17px;
+    }
+    header #categorias ul li{
+        font-size: 14px;
+    }
 }
 /* Small devices (landscape phones, 576px and up) */
 @media (max-width: 991.98px) and (min-width: 768px) {
@@ -88,6 +100,12 @@ header #categorias hr{
     }
     header #carrito p{
         display: none;
+    }
+    header #categorias h4 a{
+        font-size: 15px;
+    }
+    header #categorias ul li{
+        font-size: 12px;
     }
 }
 /* Small devices (landscape phones, less than 768px) */
@@ -113,5 +131,11 @@ header #categorias hr{
     }
     header #carrito{
         margin: 0px;
+    }
+    header #categorias h4 a{
+        font-size: 18px;
+    }
+    header #categorias ul li{
+        font-size: 15px;
     }
 }

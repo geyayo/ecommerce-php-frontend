@@ -68,60 +68,27 @@
             </div> 
         </div>
         <!-- CATEGORIAS -->
-        <div class="row row-cols-auto backColor" id="categorias">
+        <div class="container backColor" id="categorias">
             <div class="row">
-                <div class="col-lg-3 col-md-3 col-sm-4 col-12">
-                    <h4>
-                        <a href="#" class="pixelCategorias">Lorem Ipsum</a>
-                    </h4>
-                    <hr>
-                    <ul>
-                        <li><a href="#" class="pixelSubCategoria">Lorem Ipsum</a></li>
-                        <li><a href="#" class="pixelSubCategoria">Lorem Ipsum</a></li>
-                        <li><a href="#" class="pixelSubCategoria">Lorem Ipsum</a></li>
-                        <li><a href="#" class="pixelSubCategoria">Lorem Ipsum</a></li>
-                        <li><a href="#" class="pixelSubCategoria">Lorem Ipsum</a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-4 col-12">
-                    <h4>
-                        <a href="#" class="pixelCategorias">Lorem Ipsum</a>
-                    </h4>
-                    <hr>
-                    <ul>
-                        <li><a href="#" class="pixelSubCategoria">Lorem Ipsum</a></li>
-                        <li><a href="#" class="pixelSubCategoria">Lorem Ipsum</a></li>
-                        <li><a href="#" class="pixelSubCategoria">Lorem Ipsum</a></li>
-                        <li><a href="#" class="pixelSubCategoria">Lorem Ipsum</a></li>
-                        <li><a href="#" class="pixelSubCategoria">Lorem Ipsum</a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-4 col-12">
-                    <h4>
-                        <a href="#" class="pixelCategorias">Lorem Ipsum</a>
-                    </h4>
-                    <hr>
-                    <ul>
-                        <li><a href="#" class="pixelSubCategoria">Lorem Ipsum</a></li>
-                        <li><a href="#" class="pixelSubCategoria">Lorem Ipsum</a></li>
-                        <li><a href="#" class="pixelSubCategoria">Lorem Ipsum</a></li>
-                        <li><a href="#" class="pixelSubCategoria">Lorem Ipsum</a></li>
-                        <li><a href="#" class="pixelSubCategoria">Lorem Ipsum</a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-4 col-12">
-                    <h4>
-                        <a href="#" class="pixelCategorias">Lorem Ipsum</a>
-                    </h4>
-                    <hr>
-                    <ul>
-                        <li><a href="#" class="pixelSubCategoria">Lorem Ipsum</a></li>
-                        <li><a href="#" class="pixelSubCategoria">Lorem Ipsum</a></li>
-                        <li><a href="#" class="pixelSubCategoria">Lorem Ipsum</a></li>
-                        <li><a href="#" class="pixelSubCategoria">Lorem Ipsum</a></li>
-                        <li><a href="#" class="pixelSubCategoria">Lorem Ipsum</a></li>
-                    </ul>
-                </div>
+                <?php
+                    $categorias = ControladorProductos::ctrMostrarCategorias();
+
+                    foreach ($categorias as $key => $value) {
+                        echo '<div class="col-12 col-sm-3 col-md-2">
+                                <h4>
+                                    <a href="#" class="pixelCategorias">'.$value["categoria"].'</a>
+                                </h4>
+                                <hr>
+                                <ul>';
+                                $subcategorias = ControladorProductos::ctrMostrarSubCategorias($value["id"]);
+                                    foreach ($subcategorias as $key => $value) {
+                                        echo '<li><a href="#" class="pixelSubCategoria">'.$value["subcategoria"].'</a></li>';
+                                    }
+                                    echo '
+                                </ul>
+                            </div>';
+                    }
+                ?>
             </div>
         </div>
     </div>
