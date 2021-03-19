@@ -84,7 +84,11 @@
                                 </h4>
                                 <hr>
                                 <ul>';
-                                $subcategorias = ControladorProductos::ctrMostrarSubCategorias($value["id"]);
+                                
+                                $item = "id_categoria";
+                                $valor = $value["id"];
+
+                                $subcategorias = ControladorProductos::ctrMostrarSubCategorias($item, $valor);
                                     foreach ($subcategorias as $key => $value) {
                                         echo '<li><a href="'.$value["ruta"].'" class="pixelSubCategoria">'.$value["subcategoria"].'</a></li>';
                                     }

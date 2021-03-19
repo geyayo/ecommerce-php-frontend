@@ -33,8 +33,10 @@
   <body>
 
     <?php
-    //CABEZOTE
+    /*========== CABEZOTE ==========*/
     include "modulos/cabezote.php";
+
+    /*========== CONTENIDO DINAMICO ==========*/
     $rutas = array();
     $ruta = null;
 
@@ -45,14 +47,26 @@
       $item = "ruta";
       $valor = $rutas[0];
 
+
+      /*========== URL's AMIGABLES DE CATEGORIAS ==========*/
       $rutaCategorias = ControladorProductos::ctrMostrarCategorias($item, $valor);
       if(is_array($rutaCategorias)){
         if($valor == $rutaCategorias["ruta"]){
           $ruta = $valor;
         }
       }
-      
 
+      /*========== URL'S AMIGABLES DE SUB-CATEGORIAS ==========*/
+      $rutaSubCategorias = ControladorProductos::ctrMostrarSubCategorias($item, $valor);
+      if(is_array($rutaSubCategorias)){
+        foreach ($rutaSubCategorias as $key => $value) {
+          if ($rutas[0] == $value["ruta"]) {
+            $ruta = $rutas[0];
+          }
+        }
+      }
+      
+      /*========== LISTA BLANCA DE URL's AMIGABLES ==========*/
       if($ruta != null){
         include "modulos/productos.php";
       } else {

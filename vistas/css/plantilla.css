@@ -30,6 +30,7 @@ a:visited, a:link, a:focus, a:hover, a:active{
     background: #DC3545;
     color: white;
 } */
+
 /* =========== REDES SOCIALES ========== */
 
 .redSocial{
@@ -89,6 +90,14 @@ a:visited, a:link, a:focus, a:hover, a:active{
     background: #d6513e;
 }
 
+/* error 404 */
+.error404{
+    color:#333;
+}
+.error404 h1{
+    margin-top: -20px;
+}
+
 /* ========== PUNTOS DE QUIEBRE ========== */
 
 
@@ -97,12 +106,20 @@ a:visited, a:link, a:focus, a:hover, a:active{
     .col-xlg-0{
         display: none;
     }
+    .error404 h1{
+        font-size: 300px;
+        text-shadow: 8px 8px 1px #dadada;
+    }
     
 }
 /* Escritorio Mediano (MD lo revisamose en 1024px) */
 @media (max-width: 1199.98px) and (min-width: 992px) {
     .col-lg-0{
         display: none;
+    }
+    .error404 h1{
+        font-size: 250px;
+        text-shadow: 8px 8px 1px #dadada;
     }
  
 }
@@ -111,12 +128,24 @@ a:visited, a:link, a:focus, a:hover, a:active{
     .col-md-0{
         display: none;
     }
+    .error404 h1{
+        font-size: 150px;
+        text-shadow: 8px 8px 1px #dadada;
+    }
   
 }
 /* Small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
     .col-sm-0{
         display: none;
+    }
+    .error404 h1{
+        margin-top: 10px;
+        font-size: 100px;
+        text-shadow: 8px 8px 1px #dadada;
+    }
+    .error404 h2{
+        font-size: 15px;
     }
    
 }
