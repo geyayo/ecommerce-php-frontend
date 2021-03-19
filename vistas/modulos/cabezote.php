@@ -71,7 +71,11 @@
         <div class="container backColor" id="categorias">
             <div class="row">
                 <?php
-                    $categorias = ControladorProductos::ctrMostrarCategorias();
+
+                    $item = null;
+                    $valor = null;
+
+                    $categorias = ControladorProductos::ctrMostrarCategorias($item, $valor);
 
                     foreach ($categorias as $key => $value) {
                         echo '<div class="col-12 col-sm-3 col-md-2">

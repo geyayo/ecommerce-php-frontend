@@ -35,14 +35,29 @@
     <?php
     //CABEZOTE
     include "modulos/cabezote.php";
-
     $rutas = array();
+    $ruta = null;
 
     if(isset($_GET["ruta"])){
 
       $rutas = explode("/", $_GET["ruta"]);
 
-      var_dump($rutas[0]);
+      $item = "ruta";
+      $valor = $rutas[0];
+
+      $rutaCategorias = ControladorProductos::ctrMostrarCategorias($item, $valor);
+      if(is_array($rutaCategorias)){
+        if($valor == $rutaCategorias["ruta"]){
+          $ruta = $valor;
+        }
+      }
+      
+
+      if($ruta != null){
+        include "modulos/productos.php";
+      } else {
+        include "modulos/error404.php";
+      }
     }
     ?>
 
