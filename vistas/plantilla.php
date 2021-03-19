@@ -14,6 +14,10 @@
       $icono = ControladorPlantilla::ctrEstiloPlantilla();
 
       echo '<link rel="icon" href="http://localhost/cursophp/backend/'.$icono["icono"].'">';
+
+      /* ========== MANTENER LA RUTA FIJA DEL PROYECTO ========= */
+      $url = Ruta::ctrRuta();
+
     ?>
     
     <!-- Bootstrap CSS -->
@@ -21,8 +25,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="vistas/css/plantilla.css">
-    <link rel="stylesheet" href="vistas/css/cabezote.css">
+    <link rel="stylesheet" href="<?php echo $url;?>vistas/css/plantilla.css">
+    <link rel="stylesheet" href="<?php echo $url;?>vistas/css/cabezote.css">
 
     
   </head>
@@ -32,8 +36,13 @@
     //CABEZOTE
     include "modulos/cabezote.php";
 
+    $rutas = array();
+
     if(isset($_GET["ruta"])){
-      echo $_GET["ruta"];
+
+      $rutas = explode("/", $_GET["ruta"]);
+
+      var_dump($rutas[0]);
     }
     ?>
 
@@ -44,8 +53,8 @@
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-    <script src="vistas/js/cabezote.js"></script>
-    <script src="vistas/js/plantilla.js"></script>
+    <script src="<?php echo $url;?>vistas/js/cabezote.js"></script>
+    <script src="<?php echo $url;?>vistas/js/plantilla.js"></script>
 
 
 
