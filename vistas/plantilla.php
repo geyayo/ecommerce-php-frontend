@@ -31,6 +31,10 @@
     <?php
     //CABEZOTE
     include "modulos/cabezote.php";
+
+    if(isset($_GET["ruta"])){
+      echo $_GET["ruta"];
+    }
     ?>
 
     <!-- Optional JavaScript; choose one of the two! -->

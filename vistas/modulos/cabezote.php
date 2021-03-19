@@ -76,13 +76,13 @@
                     foreach ($categorias as $key => $value) {
                         echo '<div class="col-12 col-sm-3 col-md-2">
                                 <h4>
-                                    <a href="#" class="pixelCategorias">'.$value["categoria"].'</a>
+                                    <a href="'.$value["ruta"].'" class="pixelCategorias">'.$value["categoria"].'</a>
                                 </h4>
                                 <hr>
                                 <ul>';
                                 $subcategorias = ControladorProductos::ctrMostrarSubCategorias($value["id"]);
                                     foreach ($subcategorias as $key => $value) {
-                                        echo '<li><a href="#" class="pixelSubCategoria">'.$value["subcategoria"].'</a></li>';
+                                        echo '<li><a href="'.$value["ruta"].'" class="pixelSubCategoria">'.$value["subcategoria"].'</a></li>';
                                     }
                                     echo '
                                 </ul>
