@@ -27,52 +27,55 @@
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="<?php echo $url;?>vistas/css/plantilla.css">
     <link rel="stylesheet" href="<?php echo $url;?>vistas/css/cabezote.css">
+    <link rel="stylesheet" href="<?php echo $url;?>vistas/css/slide.css">
 
     
   </head>
   <body>
 
     <?php
-    /*========== CABEZOTE ==========*/
-    include "modulos/cabezote.php";
+      /*========== CABEZOTE ==========*/
+      include "modulos/cabezote.php";
 
-    /*========== CONTENIDO DINAMICO ==========*/
-    $rutas = array();
-    $ruta = null;
+      /*========== CONTENIDO DINAMICO ==========*/
+      $rutas = array();
+      $ruta = null;
 
-    if(isset($_GET["ruta"])){
+      if(isset($_GET["ruta"])){
 
-      $rutas = explode("/", $_GET["ruta"]);
+        $rutas = explode("/", $_GET["ruta"]);
 
-      $item = "ruta";
-      $valor = $rutas[0];
+        $item = "ruta";
+        $valor = $rutas[0];
 
 
-      /*========== URL's AMIGABLES DE CATEGORIAS ==========*/
-      $rutaCategorias = ControladorProductos::ctrMostrarCategorias($item, $valor);
-      if(is_array($rutaCategorias)){
-        if($valor == $rutaCategorias["ruta"]){
-          $ruta = $valor;
-        }
-      }
-
-      /*========== URL'S AMIGABLES DE SUB-CATEGORIAS ==========*/
-      $rutaSubCategorias = ControladorProductos::ctrMostrarSubCategorias($item, $valor);
-      if(is_array($rutaSubCategorias)){
-        foreach ($rutaSubCategorias as $key => $value) {
-          if ($rutas[0] == $value["ruta"]) {
-            $ruta = $rutas[0];
+        /*========== URL's AMIGABLES DE CATEGORIAS ==========*/
+        $rutaCategorias = ControladorProductos::ctrMostrarCategorias($item, $valor);
+        if(is_array($rutaCategorias)){
+          if($valor == $rutaCategorias["ruta"]){
+            $ruta = $valor;
           }
         }
-      }
-      
-      /*========== LISTA BLANCA DE URL's AMIGABLES ==========*/
-      if($ruta != null){
-        include "modulos/productos.php";
+
+        /*========== URL'S AMIGABLES DE SUB-CATEGORIAS ==========*/
+        $rutaSubCategorias = ControladorProductos::ctrMostrarSubCategorias($item, $valor);
+        if(is_array($rutaSubCategorias)){
+          foreach ($rutaSubCategorias as $key => $value) {
+            if ($rutas[0] == $value["ruta"]) {
+              $ruta = $rutas[0];
+            }
+          }
+        }
+        
+        /*========== LISTA BLANCA DE URL's AMIGABLES ==========*/
+        if($ruta != null){
+          include "modulos/productos.php";
+        } else {
+          include "modulos/error404.php";
+        }
       } else {
-        include "modulos/error404.php";
+        include "modulos/slide.php";
       }
-    }
     ?>
 
     <!-- Optional JavaScript; choose one of the two! -->
