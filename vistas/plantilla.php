@@ -87,6 +87,7 @@
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <script src="<?php echo $url;?>vistas/js/cabezote.js"></script>
     <script src="<?php echo $url;?>vistas/js/plantilla.js"></script>
+    <script src="<?php echo $url;?>vistas/js/slide.js"></script>
 
 
 
